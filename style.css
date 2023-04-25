@@ -152,7 +152,7 @@ body {
   }
 
   .wrapper {
-    background-size: cover;
-    background-position: right center;
+    background-size: contain;
+    background-position: center;
   }
 }
