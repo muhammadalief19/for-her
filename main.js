@@ -36,7 +36,7 @@ const preloader = document.querySelector(".preloader");
 const playBtn = document.getElementById("play");
 const progress = document.querySelector(".progress");
 const music = new Audio();
-music.src = "./cupid.mp3";
+music.src = "./assets/surat-cinta-untuk-starla.mp3";
 playBtn.addEventListener("click", playing);
 preloader.style.display = "none";
 
@@ -44,7 +44,7 @@ async function playing() {
   "use strict";
 
   const lyric = document.querySelector(".lyric");
-  const res = await fetch("./lyric-cupid.lrc");
+  const res = await fetch("./assets/lyric-virgoun.lrc");
   const lrc = await res.text();
   const lyrics = parseLyric(lrc);
 
