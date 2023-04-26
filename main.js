@@ -1,5 +1,10 @@
 // song
-const listSong = ["surat-cinta-untuk-starla", "cupid", "until-i-found-you"];
+const listSong = [
+  "surat-cinta-untuk-starla",
+  "cupid",
+  "until-i-found-you",
+  "nothings-gonna-change",
+];
 
 window.onload = () => {
   let length = listSong.length;
