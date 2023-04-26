@@ -4,6 +4,7 @@ const listSong = [
   "cupid",
   "until-i-found-you",
   "nothings-gonna-change",
+  "ghost",
 ];
 
 window.onload = () => {
