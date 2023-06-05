@@ -6,6 +6,7 @@ const listSong = [
   "nothings-gonna-change",
   "ghost",
   "i-like-you-so-much",
+  "aku-tenang",
 ];
 
 window.onload = () => {
