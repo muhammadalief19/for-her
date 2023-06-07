@@ -9,11 +9,31 @@ const listSong = [
   "aku-tenang",
 ];
 
+const listBg = ["bg-1", "bg-2", "bg-3", "bg-4", "bg-5"];
+
 window.onload = () => {
   let length = listSong.length;
   let index = Math.floor(Math.random() * length);
   let song = listSong[index];
   console.log(song);
+
+  // background manipulation
+  function randombackGround(x) {
+    let bgLength = listBg.length;
+    let indexBg = Math.floor(Math.random() * bgLength);
+    let bg = listBg[indexBg];
+    console.log(bg);
+    const wrapper = document.querySelector(".wrapper");
+    if (x.matches) {
+      wrapper.style.backgroundImage = `url('bg-mobile/${bg}.webp')`;
+    } else {
+      wrapper.style.backgroundImage = `url('bg-dekstop/${bg}.webp')`;
+    }
+  }
+
+  let x = window.matchMedia("(max-width: 768px)");
+  randombackGround(x);
+  x.addEventListener("change", randombackGround);
 
   // lirik
   function syncLyric(lyrics, time) {
