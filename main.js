@@ -25,10 +25,13 @@ window.onload = () => {
     console.log(bg);
     const wrapper = document.querySelector(".wrapper");
     if (x.matches) {
-      wrapper.style.backgroundImage = `url('bg-mobile/${bg}.webp')`;
+      wrapper.style.background = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0.6)), url('bg-mobile/${bg}.webp')`;
+      wrapper.style.backgroundPosition = "center";
     } else {
-      wrapper.style.backgroundImage = `url('bg-dekstop/${bg}.webp')`;
+      wrapper.style.background = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0.6)), url('bg-dekstop/${bg}.webp')`;
+      wrapper.style.backgroundPosition = "left center";
     }
+    wrapper.style.backgroundSize = "cover";
   }
 
   let x = window.matchMedia("(max-width: 768px)");
